@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/58/Key_Vector_Graphic.svg">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="Main_1">
+            <h1 class="heading">Password Generator</h1>
+           <div class="content">
+            <div class="input">
+                <input type="text" readonly id="text" value=""><span id="copy"><img src="https://cdn-icons-png.flaticon.com/512/178/178921.png" width="20px" height="20px"></span><label id="line">|</label>
+                <span onclick="genr()" id="btn"><img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/refresh-icon.png"></span>
+                <label id="not"></label>
+           
+            </div>
+            
+<div class="options">
+    <input type="range" id="slider" min="1" max="100" value="0" oninput="myfun()">
+    <label>Length&nbsp;:<span id="val">0</span></label>
+
+    <div class="setting">
+<div class="set"><label for="">UpperCase</label><input type="checkbox" id="upper"></div>
+<div class="set"><label for="">Lowercase</label><input type="checkbox" id="low"></div>
+<div class="set"><label for="">Numbers</label><input type="checkbox" id="numb"></div>
+<div class="set"><label for="">Symbols</label><input type="checkbox" id="symb"></div>
+<div class="generbtn" onclick="genpass()"><button id="gener">Generate</button></div>
+    </div>
+</div>
+
+           </div>
+        </div>
+        
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
